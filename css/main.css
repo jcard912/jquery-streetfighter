@@ -1,0 +1,128 @@
+@font-face {
+	font-family: 'fight';
+	src: url('../fonts/fight.ttf');
+}
+body {
+	background-color: black;
+}
+
+.main {
+	background-color: white;
+	margin-top: 110px;
+	padding-left: 100px;
+	min-width: 1200px;
+	height: 500px;
+	position: relative;
+}
+
+ryu {
+	width: 659px;
+	height: 494px;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+	width: 659px;
+	height: 494px;
+}
+
+.ryu-ready, .ryu-throwing, .ryu-cool{
+	display:none;
+}
+
+.ryu-ready {
+	background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-still {
+	background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-throwing {
+	background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing , .ryu-cool {
+	background-repeat: no-repeat;
+}
+
+.hadouken {
+	background-image: url('../images/hadouken.gif');
+	width: 156px;
+	height: 90px;
+	display: none;
+	float: left;
+	position: absolute;
+	z-index-10;
+	top: 167px;
+	left: 520px;
+}
+
+.ryu-container, .ryu {
+	float: left;
+}
+
+
+/* text and logos area */
+
+.text {
+	font-family: 'fight','Permanent Marker', sans-serif;
+	position: absolute;
+	font-size: 1.5rem;
+	line-height:2em;
+	left: 650px;
+	padding-top: 75px;
+	width: 600px;
+	color: darkred;
+	margin-left: 150px;
+	text-align: center;
+}
+
+.sf-logo {
+	background-image: url('../images/streetlogo.png');
+	background-size: 600px 300px;
+	width: 600px;
+	height: 300px;
+}
+
+.jquery-logo {
+	background-image: url('../images/jquery-logo.svg');
+	background-size: 600px 300px;
+	width: 600px;
+	height: 300px;
+}
+
+.created-in {
+	font-size: 5rem;
+	width: 600px;
+	padding-top: 2em;
+}
+
+
+.instructions {
+	width: 1000px;
+	font-size: 1em;
+}
+
+.instructions .p1 {
+	float: left;
+	width: 350px;
+}
+
+.instructions .p2 {
+	float: right;
+	width: 500px;
+	margin-right: 250px;
+	padding-top: 175px;
+}
+
+.x {
+	padding-left: 10px;
+}
+
+.created-in, .sf-logo, .jquery-logo, .instructions {
+	display:none;
+}
